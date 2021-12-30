@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 시퀀스 구현</title>
+    <link href="resource/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="resource/css/common.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="container">
+            <div class="visual_cnt">
+                <div class="bg_vid">
+                    <div>
+                        <img src="resource/img/0.png" alt="video" class="image_sequence">
+                    </div>
+                    <div>
+                        <iframe src="resource/img/silence.mp3" allow="autoplay" style="display:none"></iframe>
+                        <audio autoplay class="audioArea">
+                            <source src="resource/img/audio.wav">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script src="resource/js/common.js"></script>
+</body>
+</html>
