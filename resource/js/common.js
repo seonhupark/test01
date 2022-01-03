@@ -1,15 +1,9 @@
-function init(){
-    const imageSequence = document.querySelector(".image_sequence");
-    const audioArea = document.querySelector(".audio_area");
 
-    function imgSeq(){
-        let i=0;
-        setInterval(function(){
-            if( i<74 ) i++;
-            // else i=0; // loop play
-            imageSequence.src=`resource/img/${i}.png`;
-        },40)
-    }
-    imgSeq();
-}
-window.onload = init;
+const imageSequence = document.querySelector(".image_sequence");
+
+let i=0;
+let imgSeq = setInterval(()=>{
+    if( i<74 ) i++; // 한 번 재생
+    else i=0; // loop play
+    imageSequence.src=`resource/img/${i}.png`;
+},40)
