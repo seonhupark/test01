@@ -1,30 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이미지 시퀀스 구현</title>
-    <link href="resource/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="resource/css/common.css" type="text/css" rel="stylesheet">
+    <title>M STUDIO</title>
+    <!-- <link rel="stylesheet" type="text/css" href="https://maum.ai/aiaas/kr/css/maum_common.css?ver=20220217073109109"> -->
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/css/swiper.min.css"/>
+    <link href="./resources/css/font.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <!-- #wrap -->
     <div id="wrap">
-        <div id="header"></div>
-        <div id="container">
-            <div class="visual_cnt">
-                <div class="bg_vid">
-                    <div>
-                        <img src="resource/img/0.png" alt="video" class="image_sequence">
-                    </div>
-                    <div>
-                        <audio src="resource/img/audio.wav" autoplay muted controls>
+
+        <!-- #header -->
+        <header id="header"></header>
+        <!-- //#header -->
+        <!-- #contents -->
+        <div id="contents">
+            <div class="stn visual">
+                <div class="cont_small">
+                    <h3 class="stn_main_tit">
+                        쉽고 빠르게 원하는 인공 인간
+                        <br>영상 콘텐츠를 만들 수 있는 <span class="gradient_img"><img src="./resources/images/img_M_STUDIO_path_width272.png"></span>
+                    </h3>
+                    <p class="stn_sub_tit">
+                        다양한 인공 인간을 사용하여 나만의 콘텐츠를 제작할 수 있습니다.
+                    </p>
+                    <a href="#" target="_blank" class="link_mstudio">M STUDIO 시작하기</a>
+                    <div class="scroll_contents_area">
+                        <video loop muted autoplay  class="scroll_video" id="2x_video">
+                            <source src="./resources/video/M_studio_LandingPage.mp4">
+                        </video>
+                        <img src="./resources/images/img_mstudio_onlyframe_width1074.png" alt="프레임 이미지" class="scroll_frame">
+                        <img src="./resources/images/img_mstudio_onlyimage_width1074.png" alt="콘텐츠 이미지" class="scroll_contents">
                     </div>
                 </div>
             </div>
+            <div class="stn make_my_model stn_bg_bk">
+                <div class="cont_small">
+                    <h3 class="stn_main_tit">
+                        클릭 몇 번으로 간단하지만<br>
+                        결코 가볍지 않은 퀄리티
+                    </h3>
+                    <p class="stn_sub_tit">손가락 하나로 나만의 스타일을 완성해 보세요.</p>
+                    <div class="btn_tab_area">
+                        <button type="button" class="on">모델 선택하기</button>
+                        <button type="button">의상 선택하기</button>
+                        <button type="button">의상 컬러 교체하기</button>
+                        <button type="button">행동 교체하기</button>
+                    </div>
+                    <ul class="tab_box">
+                        <li class="on">
+                            <img src="./resources/images/img_mstudio_onlyimage_width1074.png" alt="콘텐츠 이미지" class="img_first on">
+                            <img src="./resources/images/img_mstudio_frame_btn01_width1074.png" alt="툴 이미지" class="img_frame img_second">
+
+                            <img src="./resources/images/img_model_ysm_width398.png" class="human on">
+                            <img src="./resources/images/img_model_cek_width398.png" class="human">
+                            <img src="./resources/images/img_model_jkh_width398.png" class="human">
+
+                            <img src="./resources/images/img_left_slide_ysm_width126.png" class="human_thum thum01 on">
+                            <img src="./resources/images/img_left_slide_cek_width126.png" class="human_thum thum01">
+                            <img src="./resources/images/img_left_slide_jkh_width126.png" class="human_thum thum01">
+
+                            <button type="button" class="btn_human on"><label><img src="./resources/images/img_YouSeungmin_7pt.png"></label></button>
+                            <button type="button" class="btn_human"><label><img src="./resources/images/img_KimSumin_7pt.png"></label></button>
+                            <button type="button" class="btn_human"><label><img src="./resources/images/img_JoKoohyun_7pt.png"></label></button>
+                        </li>
+                        <li>
+                            <img src="./resources/images/img_mstudio_onlyimage_width1074.png" alt="콘텐츠 이미지" class="img_first on">
+                            <img src="./resources/images/img_mstudio_frame_btn02_width1074.png" alt="툴 이미지" class="img_frame img_second">
+
+                            <img src="./resources/images/img_clothes_onepiece_width398.png" class="clothes on">
+                            <img src="./resources/images/img_clothes_suit_width398.png" class="clothes">
+                            <img src="./resources/images/img_clothes_semisuit_width398.png" class="clothes">
+                            <img src="./resources/images/img_clothes_casual_width398.png" class="clothes">
+                            <img src="./resources/images/img_clothes_special_width398.png" class="clothes">
+
+                            <img src="./resources/images/img_left_slide_ysm01_width126.png" class="human_thum thum02 on">
+                            <img src="./resources/images/img_left_slide_ysm02_width126.png" class="human_thum thum02">
+                            <img src="./resources/images/img_left_slide_ysm03_width126.png" class="human_thum thum02">
+                            <img src="./resources/images/img_left_slide_ysm04_width126.png" class="human_thum thum02">
+                            <img src="./resources/images/img_left_slide_ysm05_width126.png" class="human_thum thum02">
+                            
+                            <button type="button" class="btn_clothes on"><label><img src="./resources/images/img_One-piece_7pt.png"></label></button>
+                            <button type="button" class="btn_clothes"><label><img src="./resources/images/img_Suit_7pt.png"></label></button>
+                            <button type="button" class="btn_clothes"><label><img src="./resources/images/img_Semi-suit_7pt.png"></label></button>
+                            <button type="button" class="btn_clothes"><label><img src="./resources/images/img_Casual_7pt.png"></label></button>
+                            <button type="button" class="btn_clothes"><label><img src="./resources/images/img_Special_7pt.png"></label></button>
+                        </li>
+                        <li>
+                            <img src="./resources/images/img_mstudio_onlyimage_width1074.png" alt="콘텐츠 이미지" class="img_first on">
+                            <img src="./resources/images/img_mstudio_frame_btn03_width1074.png" alt="툴 이미지" class="img_frame img_second">
+
+                            <img src="./resources/images/img_clothes_color_blue_width398.png" class="clo_color on">
+                            <img src="./resources/images/img_clothes_color_green_width398.png" class="clo_color">
+                            <img src="./resources/images/img_clothes_color_pink_width398.png" class="clo_color">
+
+                            <img src="./resources/images/img_left_slide_color01_width126.png" class="human_thum thum03 on">
+                            <img src="./resources/images/img_left_slide_color02_width126.png" class="human_thum thum03">
+                            <img src="./resources/images/img_left_slide_color03_width126.png" class="human_thum thum03">
+
+                            <button type="button" class="btn_color on"><label><img src="./resources/images/img_Blue_7pt.png"></label></button>
+                            <button type="button" class="btn_color"><label><img src="./resources/images/img_Green_7pt.png"></label></button>
+                            <button type="button" class="btn_color"><label><img src="./resources/images/img_Pink_7pt.png"></label></button>
+                        </li>
+                        <li>
+                            <img src="./resources/images/img_mstudio_onlyimage_width1074.png" alt="콘텐츠 이미지" class="img_first on">
+                            <img src="./resources/images/img_mstudio_frame_btn04_width1074.png" alt="툴 이미지" class="img_frame img_second">
+
+                            <img src="./resources/images/img_ysm_pose_waiting_width398.png" class="pose on">
+                            <img src="./resources/images/img_ysm_pose_left_width398.png" class="pose">
+                            <img src="./resources/images/img_ysm_pose_right_width398.png" class="pose">
+                            <img src="./resources/images/img_ysm_pose_openhands_width398.png" class="pose">
+
+                            <img src="./resources/images/img_left_slide_pose01_width126.png" class="human_thum thum04 on">
+                            <img src="./resources/images/img_left_slide_pose02_width126.png" class="human_thum thum04">
+                            <img src="./resources/images/img_left_slide_pose03_width126.png" class="human_thum thum04">
+                            <img src="./resources/images/img_left_slide_pose04_width126.png" class="human_thum thum04">
+
+                            <button type="button" class="btn_pose on"><label><img src="./resources/images/img_Waiting_7pt.png"></label></button>
+                            <button type="button" class="btn_pose"><label><img src="./resources/images/img_Left_7pt.png"></label></button>
+                            <button type="button" class="btn_pose"><label><img src="./resources/images/img_Right_7pt.png"></label></button>
+                            <button type="button" class="btn_pose"><label><img src="./resources/images/img_Openhands_7pt.png"></label></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stn tech_intro scroll_stn">
+                <ul class="cont_large">
+                    <li>
+                        <div class="img_area">
+                            <div class="swiper-container area01">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/img_pose1_width646.png" alt="다양성">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/img_pose2_width646.png" alt="다양성">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/img_pose3_width646.png" alt="다양성">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc_area">
+                            <p class="stn_sub_tit">
+                                부동의 자세는 이제 그만
+                            </p>
+                            <p class="stn_main_tit">
+                                상황에 맞는 행동으로
+                                <br>다양성 극대화
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="desc_area">
+                            <p class="stn_sub_tit">
+                                언제 어디서나 선명하게
+                            </p>
+                            <p class="stn_main_tit">
+                                업계 최고 수준의
+                                <br>초고해상도 지원
+                            </p>
+                        </div>
+                        <div class="img_area">
+                            <img src="./resources/images/img_4K_preview_width646.png" alt="초고해상도 지원">
+                            <p class="ico_4k">
+                                <span>타사</span>
+                                <span>자사</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img_area">
+                            <div class="swiper-container area02">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/ico_flag_kor_48px.png" alt="한국어" class="ico_lang">
+                                        <video controls muted autoplay>
+                                            <source src="./resources/video/smyoo_KOR_220217.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/ico_flag_eng_48px.png" alt="영어" class="ico_lang">
+                                        <video controls muted autoplay>
+                                            <source src="./resources/video/smyoo_ENG_220217.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/ico_flag_cha_48px.png" alt="중국어" class="ico_lang">
+                                        <video controls muted autoplay>
+                                            <source src="./resources/video/smyoo_KOR_220217.mp4">
+                                        </video>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./resources/images/ico_flag_jap_48px.png" alt="일본어" class="ico_lang">
+                                        <video controls muted autoplay>
+                                            <source src="./resources/video/smyoo_KOR_220217.mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="stn_sub_txt">* 해당 기술은 모델별 상이합니다.</p>
+                        </div>
+                        <div class="desc_area">
+                            <p class="stn_sub_tit">
+                                이제 나도 언어의 마술사
+                            </p>
+                            <p class="stn_main_tit">
+                                국내 유일 상용화 수준의
+                                <br>다국어 기술
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="stn video_list stn_bg_bk">
+                <h3 class="stn_main_tit">이렇게도 많은 영상을</h3>
+                <!-- <div class="RollDiv" onmouseover="movePause=true;" onmouseleave="goMove();"> -->
+                <div class="RollDiv">
+                    <div>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide01_width638.png"></a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide02_width638.png"> </a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide03_width638.png"></a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide04_width638.png"></a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide05_width638.png"></a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide06_width638.png"></a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide07_width638.png"></a>
+                        <a href="javascript:void(0)"><img src="./resources/images/img_slide08_width638.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="stn device_list stn_bg_bk">
+                <h3 class="stn_main_tit scroll_con">이렇게나 다양한 화면에서</h3>
+                <div class="cont_large">
+                    <div class="img_device scroll_con">
+                        <img src="./resources/images/img_device_5types_width824@2x.png" alt="다양한 디바이스">
+                        <a href="https://maum.ai/home/estimate/krAhb2" target="_blank">
+                            <img src="./resources/images/img_external_link_path_width200.png" alt="인공인간 디바이스 더 알아보기">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="stn buy_product">
+                <p class="stn_sub_tit">제품을 구입하고</p>
+                <h3 class="stn_main_tit">지금 바로 경험해 보세요!</h3>
+                <div class="link_area">
+                    <a href="#" target="_blank" class="link_mstudio_footer">M 스튜디오 시작하기</a>
+                    <a href="https://store.maum.ai/" target="_blank" class="link_mstore_footer">M 스토어 바로가기</a>
+                </div>
+            </div>
         </div>
-        <div id="footer"></div>
+        <!-- //#contents -->
+        <!-- #footer -->
+        <div id="footerLanding" class="section fp-section fp-table active fp-completely" data-anchor="stn_footer" style="height: 975px;"><div class="fp-tableCell" style="height: 975px;">
+            <div class="ft_top">
+                <div class="footer_inner">
+                    <div class="col links fl">
+                        <a href="https://mindslab.ai:8080/kr/company" target="_blank">회사소개</a>
+                        <a href="https://maum.ai/home/krTermsMain" target="_blank">이용약관</a>
+                        <a href="https://maum.ai/home/krTermsMain#conditions" target="_blank">개인정보처리방침</a>
+                    </div>
+        
+                    <div class="col contact">
+                        <a href="tel:16613222">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_phone_20.svg" alt="전화 걸기">
+                            <span>1661-3222</span>
+                        </a>
+                        <br>
+                        <a href="mailto:hello@mindslab.ai">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_email_20.svg" alt="메일 보내기">
+                            <span>hello@mindslab.ai</span>
+                        </a>
+                    </div>
+        
+                    <div class="col sns fr">
+                        <a href="https://www.facebook.com/mindsinsight" target="_blank" title="페이스북 바로가기">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_facebook_40.svg" alt="페이스북 아이콘">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC8ocQaJFp-adzGtwcBuS3iQ?view_as=subscriber" target="_blank" title="유튜브 바로가기">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_youtube_40.svg" alt="유튜브 아이콘">
+                        </a>
+                        <a href="https://post.naver.com/my.nhn?memberNo=45704243" target="_blank" title="네이버 블로그 바로가기">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_blog_40.svg" alt="네이버블로그 아이콘">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ft_btm">
+                <div class="footer_inner">
+                    <div class="col company fl">
+                        <address>
+                            <span>대표 유태준 |</span>
+                            <span>사업자 등록번호 314-86-55446 |</span>
+                            <span>통신판매업신고번호 2019-대전유성-0094</span><br>
+                            <span>(주) 마인즈랩 경기도 성남시 분당구 대왕판교로644번길 49 다산타워 6층</span><br>
+                            <span>상담시간 : 09:00 ~ 18:00 (점심시간 12:30 ~ 13:30)</span>
+                        </address>
+                        <p class="copyright">
+                            Copyright © 2022 MINDsLab. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <!-- //#footer -->
     </div>
-    <script src="resource/js/common.js"></script>
+    <!-- //#wrap -->
+    <script src="./resources/js/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.1.min.js"></script>
+    <script src="./resources/js/jquery.easing.1.3.js"></script>
+    <script src="./resources/js/swiper.js"></script>
+    <script src="./resources/js/swiper.min.js"></script>
+    <script src="./resources/js/common.js"></script>
 </body>
 </html>
